@@ -38,6 +38,7 @@ public class BookService {
 			 var bookToUpdate = new Book(
 			 existingBook.id(),
 			 existingBook.isbn(),
+			 existingBook.publisher(),
 			 book.title(),
 			 book.author(),
 			 book.price(),
