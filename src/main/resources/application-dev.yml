@@ -1,0 +1,21 @@
+server:
+ port: 8080
+ tomcat:
+  connection-timeout: 2s
+  keep-alive-timeout: 15s
+  threads:
+   max: 50
+   min-spare: 5
+catalog:
+ greeting: Welcome to the dev book catalog!
+spring:
+ sql: 
+  init: 
+   mode: always
+ datasource: 
+  username: user
+  password: password
+  url: jdbc:postgresql://localhost:5433/catalogdb
+  hikari:
+   connection-timeout: 2000
+   maximum-pool-size: 5

@@ -6,3 +6,16 @@ server:
   threads:
    max: 50
    min-spare: 5
+spring:
+ application: 
+  name: catalog-service
+ config: 
+  import: "configserver:"
+ cloud: 
+  config: 
+   uri: http://localhost:8888
+ profiles:
+  active: dev
+  group:
+   dev: testData
+   
